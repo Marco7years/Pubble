@@ -18,4 +18,10 @@ public class BubbleController : MonoBehaviour
         Vector3 direction = new Vector3(0,1.0f,0);
         transform.position += direction * Time.deltaTime * speed;
     }
+
+    private void OnMouseDown()
+    {
+        this.gameObject.SetActive(false);
+    }
+
 }
