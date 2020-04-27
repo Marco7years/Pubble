@@ -20,13 +20,12 @@ public class YellowController : MonoBehaviour
     void Update()
     {
         float vertical = speed * Time.deltaTime;
-        int randomDirection = Random.Range(-1, 2);
-        Debug.Log($"{randomDirection}");
-
+        
         if (coolDown < 0)
         {
             coolDown = timeToCoolDown;
-            Debug.Log($"CoolDown-->{coolDown}");
+            int randomDirection = Random.Range(-1, 1);
+            if(randomDirection == 0) randomDirection = 1;
             horizontal = randomDirection * speed * Time.deltaTime;
         }
 
