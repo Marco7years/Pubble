@@ -122,12 +122,12 @@ PrefabInstance:
     - target: {fileID: 549572323408094471, guid: 1846d6f9b908d2441b29ec69410da5ed,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.16
+      value: 3.39
       objectReference: {fileID: 0}
     - target: {fileID: 549572323408094471, guid: 1846d6f9b908d2441b29ec69410da5ed,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.91
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 549572323408094471, guid: 1846d6f9b908d2441b29ec69410da5ed,
         type: 3}
@@ -181,6 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2029478201742579115, guid: 1846d6f9b908d2441b29ec69410da5ed, type: 3}
+    - {fileID: 58534542632661920, guid: 1846d6f9b908d2441b29ec69410da5ed, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1846d6f9b908d2441b29ec69410da5ed, type: 3}
 --- !u!4 &132892177 stripped
 Transform:
@@ -206,8 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad9c6e9135725fd409500b2e3df65f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
---- !u!50 &132892182
+  speed: 1
+--- !u!50 &132892180
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0

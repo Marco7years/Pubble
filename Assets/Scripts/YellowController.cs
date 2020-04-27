@@ -4,40 +4,34 @@ using UnityEngine;
 
 public class YellowController : MonoBehaviour
 {
-    public float speed = 0.5f;
-    private int interval = 1;
-    private float nextTime = 0;
+    Rigidbody2D rb2D;
+    float coolDown = -1.0f;
+    float timeToCoolDown = 1.0f;
+    [SerializeField] float speed = 2.0f;
+    float horizontal = 0f;
 
-    Rigidbody2D rigidBody;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+       rb2D = gameObject.GetComponent<Rigidbody2D>();
+       rb2D.bodyType = RigidbodyType2D.Kinematic;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // movementBubble();
-        rigidBody.AddForce(new Vector2(-1.0f, 0));
-    }
+        float vertical = speed * Time.deltaTime;
+        int randomDirection = Random.Range(-1, 2);
+        Debug.Log($"{randomDirection}");
 
-    void movementBubble()
-    {
-        // float number = Random.value;
+        if (coolDown < 0)
+        {
+            coolDown = timeToCoolDown;
+            Debug.Log($"CoolDown-->{coolDown}");
+            horizontal = randomDirection * speed * Time.deltaTime;
+        }
 
-        /* if (number > 0.5)
-         {
-             transform.Translate(5 * Vector3.up * Time.deltaTime);
-             transform.Translate(5 * Vector3.right * Time.deltaTime);
-         }
-         else
-         {
-             transform.Translate(5 * Vector3.up * Time.deltaTime);
-             transform.Translate(5 * Vector3.left * Time.deltaTime);
-         }*/
-
-        
+        Vector3 newPosition = transform.position + new Vector3(horizontal, vertical, 0f);
+        rb2D.MovePosition(newPosition);
+        coolDown -= Time.deltaTime;
     }
 }
