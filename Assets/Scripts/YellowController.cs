@@ -33,4 +33,9 @@ public class YellowController : MonoBehaviour
         rb2D.MovePosition(newPosition);
         coolDown -= Time.deltaTime;
     }
+
+    private void OnMouseDown()
+    {
+        this.gameObject.SetActive(false);
+    }
 }
