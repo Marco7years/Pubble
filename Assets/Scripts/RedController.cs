@@ -38,11 +38,6 @@ public class RedController : MonoBehaviour
         coolDown -= Time.deltaTime;
     }
 
-    private void OnMouseDown()
-    {
-        this.gameObject.SetActive(false);
-    }
-
         // Per la collisione delle bolle con la parte alta dello schermo(da modificare)
 /*    void OnCollisionEnter2D(Collision2D other)
   {

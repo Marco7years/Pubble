@@ -2,9 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BubbleController : MonoBehaviour
+public class BlueController : MonoBehaviour
 {
     public float speed;
+    Rigidbody2D rb2D;
+
+    private void Start()
+    {
+        rb2D = gameObject.GetComponent<Rigidbody2D>();
+        //rb2D.bodyType = RigidbodyType2D.Kinematic;
+    }
 
     // Update is called once per frame
     void Update()
@@ -13,10 +20,6 @@ public class BubbleController : MonoBehaviour
         transform.position += direction * Time.deltaTime * speed;
     }
 
-    private void OnMouseDown()
-    {
-        this.gameObject.SetActive(false);
-    }
 
     // Per la collisione delle bolle con la parte alta dello schermo(da modificare)
     /*    void OnCollisionEnter2D(Collision2D other)
