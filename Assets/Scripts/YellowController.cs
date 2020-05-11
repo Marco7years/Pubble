@@ -13,7 +13,7 @@ public class YellowController : MonoBehaviour
     private void Awake()
     {
        rb2D = gameObject.GetComponent<Rigidbody2D>();
-       rb2D.bodyType = RigidbodyType2D.Kinematic;
+       //rb2D.bodyType = RigidbodyType2D.Kinematic;
     }
 
     // Update is called once per frame
@@ -32,11 +32,6 @@ public class YellowController : MonoBehaviour
         Vector3 newPosition = transform.position + new Vector3(horizontal, vertical, 0f);
         rb2D.MovePosition(newPosition);
         coolDown -= Time.deltaTime;
-    }
-
-    private void OnMouseDown()
-    {
-        this.gameObject.SetActive(false);
     }
 
       // Per la collisione delle bolle con la parte alta dello schermo(da modificare)
