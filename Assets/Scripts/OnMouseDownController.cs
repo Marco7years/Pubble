@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class OnMouseDownController : MonoBehaviour
 {
-
-    [SerializeField] ParticleSystem explosion;
+    private ParticleSystem explosion;
 
      private void Awake ()
     {
