@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class OnMouseDownController : MonoBehaviour
 {
+    [SerializeField] ParticleSystem explosion;
+
     private void OnMouseDown()
     {
-        this.gameObject.SetActive(false);
+        explosion.Play();
+        Destroy(gameObject);
     }
 }
