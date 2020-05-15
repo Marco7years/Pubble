@@ -5,7 +5,7 @@ using UnityEngine;
 public class DestroyBubble : MonoBehaviour
 {
     void OnBecameInvisible()
-    {
+    {    
         Destroy(gameObject);
     }
 }
