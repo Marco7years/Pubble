@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1682180433626494738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.6838567, y: -18.712431, z: 0}
-  m_LocalScale: {x: 0.3922974, y: 0.3922974, z: 0.3922974}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -268387131
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300010, guid: a83d0b84b16c82c40a5abab1fd54525a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d19750d11b79b64bbd45e93513daa37, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142e21f29c64abf44883f6aad5cb97fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blueBubble: {fileID: 0}
+  bubbleSpawned: {fileID: 0}
   respawnTime: 1
 --- !u!50 &1682180433626494750
 Rigidbody2D:
