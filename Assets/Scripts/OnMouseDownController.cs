@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class OnMouseDownController : MonoBehaviour
 {
-    private ParticleSystem explosion;
-
-     private void Awake ()
-    {
-        explosion = GetComponentInChildren<ParticleSystem> ();
-    }
+    public ParticleSystem explosionEffect;
 
     private void OnMouseDown()
     {
-        explosion.Play();
         Destroy(gameObject);
+        ParticleSystem explosion = Instantiate(explosionEffect) as ParticleSystem;
+        explosion.transform.position = transform.position;
+        explosion.Play();
     }
 }
