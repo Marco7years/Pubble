@@ -6,10 +6,10 @@ public class OnMouseDownController : MonoBehaviour
 {
     private ParticleSystem explosion;
 
-     private void Awake ()
-    {
+     private void Awake()
+     {
         explosion = GetComponentInChildren<ParticleSystem> ();
-    }
+     }
 
     private void OnMouseDown()
     {

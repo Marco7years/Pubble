@@ -36,6 +36,5 @@ public class DeployBubble : MonoBehaviour
             yield return new WaitForSeconds(respawnTime);
             spawnBubble();
         }
-    }
-    
+    } 
 }
