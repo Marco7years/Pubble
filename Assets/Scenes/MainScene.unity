@@ -1276,6 +1276,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1250282358}
     m_Modifications:
+    - target: {fileID: 127506522198587701, guid: 4c14ceba0b5e26a4fb5c1eee457620aa,
+        type: 3}
+      propertyPath: m_Radius
+      value: 10.42
+      objectReference: {fileID: 0}
     - target: {fileID: 127506522198587703, guid: 4c14ceba0b5e26a4fb5c1eee457620aa,
         type: 3}
       propertyPath: m_Controller
@@ -1385,6 +1390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1682180433626494744, guid: 7db11bf5a8cd9d64fb412f71002a1e92,
+        type: 3}
+      propertyPath: m_Radius
+      value: 10.21
       objectReference: {fileID: 0}
     - target: {fileID: 1682180433626494745, guid: 7db11bf5a8cd9d64fb412f71002a1e92,
         type: 3}
@@ -1564,6 +1574,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: cf881e322ca8cdc4e83ecd57e5985fc2,
         type: 3}
+    - target: {fileID: 2946309818804193031, guid: 9322d8e46a0a7bd4b8999dd1e94e4fa0,
+        type: 3}
+      propertyPath: m_Radius
+      value: 10.46
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9322d8e46a0a7bd4b8999dd1e94e4fa0, type: 3}
 --- !u!1001 &4994469374318028221
