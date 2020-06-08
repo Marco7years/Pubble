@@ -7,7 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bubble
+<<<<<<< HEAD:Assets/Jiggly Bubble Free/Materials/bubbleG.mat
+  m_Name: bubbleG
+=======
+  m_Name: bubble yellow
+>>>>>>> 986907bafb14f724207ff33033470f50c8ad32bd:Assets/PhysicsMaterial/bubble yellow.mat
   m_Shader: {fileID: 206, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
@@ -40,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7d19750d11b79b64bbd45e93513daa37, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6e7ec6a4d9fa04143a3d1a1ee00e9585, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

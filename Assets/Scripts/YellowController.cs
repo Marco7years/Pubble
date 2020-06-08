@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class YellowController : MonoBehaviour
 {
-    Rigidbody2D rb2D;
-    float coolDown = -1.0f;
-    float timeToCoolDown = 1.0f;
+    private Rigidbody2D rb2D;
+    private float coolDown = -1.0f;
+    private float timeToCoolDown = 1.0f;
     [SerializeField] float speed = 2.0f;
-    float horizontal = 0f;
+    private float horizontal = 0f;
 
     private void Awake()
     {
@@ -34,18 +34,10 @@ public class YellowController : MonoBehaviour
         coolDown -= Time.deltaTime;
     }
 
-      // Per la collisione delle bolle con la parte alta dello schermo(da modificare)
-      /*
-       * void OnCollisionEnter2D(Collision2D other)
-       * {
-    // Zero out the bird's velocity
-    rb2d.velocity = Vector2.zero;
-    // If the bird collides with something set it to dead...
-    isDead = true;
-    //...tell the Animator about it...
-    anim.SetTrigger ("Die");
-    //...and tell the game control about it.
-    GameControl.instance.BirdDied ();
-}
-*/
+      
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        horizontal = -horizontal;
+    }
+
 }
