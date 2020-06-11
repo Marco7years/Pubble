@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Jiggly Bubble Free/Materials/bubbleG.mat.meta
-guid: a4013514f8b738a49a76b424b462b002
-=======
-guid: 2f9f6a87288a25349a237b731ea3f71b
->>>>>>> 986907bafb14f724207ff33033470f50c8ad32bd:Assets/PhysicsMaterial/bubble yellow.mat.meta
+guid: 98015f035831cbf479213ec21e724c0e
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
