@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1682180433626494748}
   - component: {fileID: 1682180433626494749}
   - component: {fileID: 1682180433626494747}
-  - component: {fileID: 114809281934478410}
   - component: {fileID: 1682180433626494750}
   - component: {fileID: 1682180433626494745}
   - component: {fileID: 1682180433626494744}
@@ -31,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682180433626494738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6838567, y: -18.712431, z: 0}
+  m_LocalPosition: {x: 3.8650079, y: -12.48808, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -112,20 +111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 4994469375629982353, guid: 4bc1978a4446b854d8c8c645dc302617,
     type: 3}
---- !u!114 &114809281934478410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682180433626494738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 142e21f29c64abf44883f6aad5cb97fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubbleSpawned: {fileID: 0}
-  respawnTime: 1
 --- !u!50 &1682180433626494750
 Rigidbody2D:
   serializedVersion: 4
@@ -143,7 +128,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -181,4 +166,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.48
+  m_Radius: 10.42
