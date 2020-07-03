@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedController1 : MonoBehaviour
+public class RedController : MonoBehaviour
 {
     Rigidbody2D rb2D;
     [SerializeField] float speed = 1.0f;

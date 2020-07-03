@@ -12,26 +12,30 @@ public class GameControl : MonoBehaviour
     public int score = 0;                        //The player's score.
     public bool gameOver = false;                //Is the game over?
     public float scrollSpeed = -0.5f;
-
+    public Text livesText;
+    public int lives = 3;
 
     void Awake()
     {
-        //If we don't currently have a game control...
         if (instance == null)
-            //...set this one to be it...
+
             instance = this;
-        //...otherwise...
+
         else if(instance != this)
-            //...destroy this one because it is a duplicate.
+
             Destroy (gameObject);
     }
    
     void Update()
     {
-        //If the game is over and the player has pressed some input...
+        if (this.lives == 0)
+        {
+            gameOvertext.SetActive(true);
+            gameOver = true;
+        }
+
         if (gameOver && Input.GetMouseButtonDown(0)) 
         {
-            //...reload the current scene.
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -45,11 +49,12 @@ public class GameControl : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
     }
 
-    public void BirdDied()
+    public void ShowLives()
     {
-        //Activate the game over text.
-        gameOvertext.SetActive (true);
-        //Set the game to be over.
-        gameOver = true;
+        if (gameOver)
+            return;
+
+        livesText.text = lives.ToString();
     }
+
 }

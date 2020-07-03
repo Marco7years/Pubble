@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedController1 : MonoBehaviour
+public class RedController3 : MonoBehaviour
 {
     Rigidbody2D rb2D;
     [SerializeField] float speed = 1.0f;
@@ -23,7 +23,22 @@ public class RedController1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GameControl.instance.score > 10)
+            speed = 7.0f;
+        if (GameControl.instance.score > 20)
+            speed = 9.0f;
+        if (GameControl.instance.score > 30)
+            speed = 11.0f;
+        if (GameControl.instance.score > 40)
+            speed = 13.0f;
+        if (GameControl.instance.score > 50)
+            speed = 17.0f;
+        if (GameControl.instance.score > 60)
+            speed = 20.0f;
+        if (GameControl.instance.score > 70)
+            speed = 24.0f;
+        if (GameControl.instance.score > 80)
+            speed = 27.0f;
     }
 
     private void FixedUpdate()

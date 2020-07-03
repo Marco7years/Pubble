@@ -12,7 +12,7 @@ public class DestroyBubble : MonoBehaviour
     }
 
     void OnBecameInvisible()
-    {    
+    {
         Destroy(gameObject);
         Destroy(explosion);
     }
