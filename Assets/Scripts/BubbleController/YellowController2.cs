@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class YellowController1 : MonoBehaviour
+public class YellowController2 : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     private float coolDown = -1.0f;
@@ -20,21 +20,21 @@ public class YellowController1 : MonoBehaviour
     void Update()
     {
         if (GameControl.instance.score > 10)
-            speed = 4.0f;
-        if (GameControl.instance.score > 20)
             speed = 6.0f;
-        if (GameControl.instance.score > 30)
+        if (GameControl.instance.score > 20)
             speed = 8.0f;
-        if (GameControl.instance.score > 40)
+        if (GameControl.instance.score > 30)
             speed = 10.0f;
-        if (GameControl.instance.score > 50)
+        if (GameControl.instance.score > 40)
             speed = 12.0f;
-        if (GameControl.instance.score > 60)
+        if (GameControl.instance.score > 50)
             speed = 14.0f;
-        if (GameControl.instance.score > 70)
+        if (GameControl.instance.score > 60)
             speed = 16.0f;
-        if (GameControl.instance.score > 80)
+        if (GameControl.instance.score > 70)
             speed = 18.0f;
+        if (GameControl.instance.score > 80)
+            speed = 20.0f;
 
     }
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class YellowController1 : MonoBehaviour
+public class YellowController : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     private float coolDown = -1.0f;
