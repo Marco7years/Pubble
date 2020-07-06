@@ -346,9 +346,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 916864190}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 916864192}
+        m_MethodName: PlayS1L1
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -356,17 +356,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1846679526}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &524797485
 MonoBehaviour:
@@ -785,13 +774,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 916864191}
+  - component: {fileID: 916864192}
   m_Layer: 5
   m_Name: StageSelection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &916864191
 RectTransform:
   m_ObjectHideFlags: 0
@@ -818,6 +808,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000061035, y: -0.0099182}
   m_SizeDelta: {x: 1080, y: 1920}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &916864192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916864190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1824888168d1c948b00c5983d364038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &917613928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,7 +1694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1305396910
 RectTransform:
   m_ObjectHideFlags: 0
