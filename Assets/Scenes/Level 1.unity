@@ -359,7 +359,6 @@ GameObject:
   - component: {fileID: 680457134}
   - component: {fileID: 680457136}
   - component: {fileID: 680457135}
-  - component: {fileID: 680457137}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -383,8 +382,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31.4, y: 3.95}
-  m_SizeDelta: {x: 34.23, y: 34.23}
+  m_AnchoredPosition: {x: -26.612976, y: 2.5550003}
+  m_SizeDelta: {x: 24.89, y: 24.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &680457135
 MonoBehaviour:
@@ -399,12 +398,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.23113209, b: 0.23113209, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c49da65b7f234e147add28ab2425dc08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2668a76de34336f45bcd10a702916dc0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -421,21 +420,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680457133}
   m_CullTransparentMesh: 0
---- !u!114 &680457137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680457133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 0, b: 0.12303066, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
-  m_UseGraphicAlpha: 1
 --- !u!1 &887124949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,8 +1225,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -43.8, y: -14.350006}
-  m_SizeDelta: {x: 134.94, y: 25.3}
+  m_AnchoredPosition: {x: -38, y: -12}
+  m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1506604257
 MonoBehaviour:
@@ -1430,7 +1414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 93.7, y: -14.35}
+  m_AnchoredPosition: {x: 90.1, y: -12}
   m_SizeDelta: {x: 36.175, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1740527823
@@ -1445,7 +1429,7 @@ MonoBehaviour:
   m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 0, b: 0, a: 0.5}
+  m_EffectColor: {r: 0, g: 1, b: 0.1782589, a: 0.5}
   m_EffectDistance: {x: 1.8, y: -1.8}
   m_UseGraphicAlpha: 1
 --- !u!114 &1740527824
@@ -1468,7 +1452,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3357cfaa7d882884c81e7eb349c5a26a, type: 3}
-    m_FontSize: 35
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
