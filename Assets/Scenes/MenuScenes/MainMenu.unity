@@ -791,7 +791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &916864191
 RectTransform:
   m_ObjectHideFlags: 0
@@ -801,7 +801,7 @@ RectTransform:
   m_GameObject: {fileID: 916864190}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.22, y: 0.22, z: 1}
   m_Children:
   - {fileID: 524797483}
   - {fileID: 2115414432}
@@ -1134,8 +1134,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1846679528}
-        m_MethodName: PlayS1L1
+      - m_Target: {fileID: 102900000, guid: d9a6dac45aa22a643ad8e2f4c5ee8672, type: 3}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1692,7 +1692,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1305396910
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1922,7 +1922,7 @@ RectTransform:
   m_GameObject: {fileID: 1846679526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.22, y: 0.22, z: 1}
   m_Children:
   - {fileID: 971900328}
   - {fileID: 1872233583}
