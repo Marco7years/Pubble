@@ -14,6 +14,12 @@ public class GameControl : MonoBehaviour
     public float scrollSpeed = -0.5f;
     public Text livesText;
     public int lives = 3;
+    private AudioSource pop;
+
+    private void Start()
+    {
+        pop = GetComponent<AudioSource>();
+    }
 
     void Awake()
     {
@@ -24,6 +30,7 @@ public class GameControl : MonoBehaviour
         else if(instance != this)
 
             Destroy (gameObject);
+
     }
    
     void Update()
@@ -47,6 +54,7 @@ public class GameControl : MonoBehaviour
         score++;
 
         scoreText.text = "Score: " + score.ToString();
+        pop.Play();
     }
 
     public void ShowLives()
