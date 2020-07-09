@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "642044847573",
+    "firebase_url": "https://pubble-test.firebaseio.com",
+    "project_id": "pubble-test",
+    "storage_bucket": "pubble-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642044847573:android:93c0bc935b449974b3895c",
+        "android_client_info": {
+          "package_name": "com.romatre.pubbleTest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642044847573-m7i7gvv8rige2o01bp74ggbicr977coa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcPr36txV2pG6CvevQPCy9s0EAvSKIYS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642044847573-m7i7gvv8rige2o01bp74ggbicr977coa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
