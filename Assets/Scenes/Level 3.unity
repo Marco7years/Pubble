@@ -643,7 +643,7 @@ GameObject:
   - component: {fileID: 917394915}
   - component: {fileID: 917394912}
   m_Layer: 0
-  m_Name: Flash
+  m_Name: Cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -771,7 +771,7 @@ SpriteRenderer:
   m_SortingLayerID: 1247916335
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 144cbb06244d49a4e914d75cd9a237b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 540e54e79fdda224fb37448284fbf6fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -971,7 +971,7 @@ GameObject:
   - component: {fileID: 1026307919}
   - component: {fileID: 1026307918}
   m_Layer: 0
-  m_Name: Flash 2
+  m_Name: Could 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -985,7 +985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026307916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000004, y: 19.2, z: 0}
+  m_LocalPosition: {x: 0, y: 19.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 516536763}
@@ -1125,10 +1125,10 @@ SpriteRenderer:
   m_SortingLayerID: 1247916335
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 144cbb06244d49a4e914d75cd9a237b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 540e54e79fdda224fb37448284fbf6fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 10.8, y: 19.2}
   m_AdaptiveModeThreshold: 0.5
