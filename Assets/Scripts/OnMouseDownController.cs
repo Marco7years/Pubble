@@ -7,7 +7,6 @@ public class OnMouseDownController : MonoBehaviour
     public ParticleSystem explosionEffect;
     private ParticleSystem explosion;
 
-
     private void OnMouseDown()
     {
         GameControl.instance.BubbleScore();
