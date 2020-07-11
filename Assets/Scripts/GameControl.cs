@@ -15,6 +15,7 @@ public class GameControl : MonoBehaviour
     public Text livesText;
     public int lives = 3;
     private AudioSource pop;
+    private int highscore;
 
     private void Start()
     {
@@ -23,6 +24,16 @@ public class GameControl : MonoBehaviour
 
     void Awake()
     {
+        if (PlayerPrefs.HasKey("highscore"))
+        {
+            highscore = PlayerPrefs.GetInt("highscore");
+        }
+        else
+        {
+            highscore = 0;
+            PlayerPrefs.SetInt("highscore", highscore);
+        }
+
         if (instance == null)
 
             instance = this;
@@ -43,7 +54,7 @@ public class GameControl : MonoBehaviour
 
         if (gameOver && Input.GetMouseButtonDown(0)) 
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(0);
         }
     }
  
@@ -52,6 +63,8 @@ public class GameControl : MonoBehaviour
         if (gameOver)    
             return;
         score++;
+
+        this.UpdateHighScore();
 
         scoreText.text = "Score: " + score.ToString();
         pop.Play();
@@ -63,6 +76,17 @@ public class GameControl : MonoBehaviour
             return;
 
         livesText.text = lives.ToString();
+    }
+
+    public void UpdateHighScore()
+    {
+        if (score > highscore)
+        {
+            highscore = score;
+            PlayerPrefs.SetInt("highscore", highscore);
+            //PlayerPrefs.Save();
+        }
+        Debug.Log(PlayerPrefs.GetInt("highscore").ToString());
     }
 
 }

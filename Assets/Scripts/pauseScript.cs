@@ -4,39 +4,28 @@ using UnityEngine;
 
 public class pauseScript : MonoBehaviour
 {
-    bool isPaused = false;
- 
-    /*
-    public void pauseGame()
-    {
-        Debug.Log("Is working");
+    public bool pause;
 
-        if (isPaused)
-        {
-            Time.timeScale = 1f;
-            isPaused = false;
-        }
-        else
-        {
-            Time.timeScale = 0f;
-            isPaused = true;
-        }
-    }*/
-
-    void onMouseDown()
+    // Start is called before the first frame update
+    void Start()
     {
-       if(Input.GetKeyDown(KeyCode.Escape))
+        pause = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void onPause()
+    {
+        pause = !pause;
+        if(!pause)
         {
-            if(isPaused)
-            {
-                Time.timeScale = 1f;
-                isPaused = false;
-            }
-            else
-            {
-                Time.timeScale = 0f;
-                isPaused = true;
-            }
+            Time.timeScale = 1;
+        } else if(pause) {
+            Time.timeScale = 0;
         }
     }
 }
