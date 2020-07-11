@@ -16,6 +16,7 @@ public class GameControl : MonoBehaviour
     public int lives = 3;
     private AudioSource pop;
     private int highscore;
+    public bool isPaused;
 
     private void Start()
     {

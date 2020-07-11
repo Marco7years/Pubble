@@ -9,9 +9,12 @@ public class OnMouseDownController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        GameControl.instance.BubbleScore();
-        Destroy(gameObject);
-        ManageParticleSystem();
+        if (!GameControl.instance.isPaused)
+        {
+            GameControl.instance.BubbleScore();
+            Destroy(gameObject);
+            ManageParticleSystem();
+        }
     }
 
     private void ManageParticleSystem()

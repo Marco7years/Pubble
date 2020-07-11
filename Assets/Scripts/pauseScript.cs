@@ -24,8 +24,10 @@ public class pauseScript : MonoBehaviour
         if(!pause)
         {
             Time.timeScale = 1;
+            GameControl.instance.isPaused = false;
         } else if(pause) {
             Time.timeScale = 0;
+            GameControl.instance.isPaused = true;
         }
     }
 }
