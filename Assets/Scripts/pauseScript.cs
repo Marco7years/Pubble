@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pauseScript : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class pauseScript : MonoBehaviour
     void Start()
     {
         pause = false;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -29,5 +31,12 @@ public class pauseScript : MonoBehaviour
             Time.timeScale = 0;
             GameControl.instance.isPaused = true;
         }
+    }
+
+    public void ToMainMenu()
+    {
+        pause = false;
+        GameControl.instance.isPaused = false;
+        SceneManager.LoadScene(0);
     }
 }
